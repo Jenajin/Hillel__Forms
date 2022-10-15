@@ -51,14 +51,35 @@ html {
     background-color: cadetblue;
     color:darkslategray;
     height: 100%;
+    transition: 0.5s;
+    border-radius: 1rem;
 }
 
 .navbar__link:hover {
     color:lavender;
+    box-shadow: 0 0 1rem #21414180;
 }
 
 .container-form {
     margin: 20px 0;
+}
+
+.btn-input {
+    text-decoration: none;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    display: inline-block;
+    text-align: center;
+    transition: 0.5s;
+    outline: 3px solid transparent;
+    background-color:darkkhaki;
+    border-radius: 1rem;
+}
+
+.btn-input:hover {
+    background-color: darkolivegreen;
+    outline-color:darkslategray;
+    color: white;
 }
 
 
