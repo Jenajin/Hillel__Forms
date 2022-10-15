@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="https://tests.fomenko.top/echo/index.php" autocomplete="on" name="registration">
+
+            <div class="container-form">
+                <label for="email">Введіть свою електронну пошту</label>
+                <input type="email" name="email" id="email" placeholder="Електронна пошта" size="30">
+            </div>
+
+            <div class="container-form">
+                <label for="login">Придумайте свій логін</label>
+                <input type="text" name="login" id="login" placeholder="Логін" required size="30">
+            </div>
+
+            <div class="container-form">
+                <label for="password">Придумайте свій пароль</label>
+                <input type="password" name="password" id="password" placeholder="Пароль" minlength="8" required
+                    size="30" autocomplete="new-password">
+            </div>
+
+            <div class="container-form">
+                <label for="password_confirmation">Підтвердість правильність паролю</label>
+                <input type="password" name="password_confirmation" id="password_confirmation"
+                    placeholder="Підтвердження паролю" required size="30">
+            </div>
+
+            <div class="container-form">
+                <input type="submit">
+                <input type="reset">
+            </div>
+        </form>
+
+        <ul class="navbar">
+            <li class="navbar__item">
+                <a class="navbar__link" href="">Повернутись на головне меню</a>
+            </li>
+            <li class="navbar__item">
+                <a class="navbar__link" href="">Авторизуватись</a>
+            </li>
+        </ul>
+
+    </div>
+
+
+
+</body>
+
+</html>

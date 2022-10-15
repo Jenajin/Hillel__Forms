@@ -10,7 +10,6 @@ html {
     background-color: lightgrey;
 }
 
-
 .container {
     position: relative;
     top: 50vh;
@@ -31,7 +30,7 @@ html {
     text-align: center;
 }
 
-.header-list {
+.navbar {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -41,32 +40,40 @@ html {
     gap: 20px;  
 }
 
-.header-list__item {
-      
-}
-
-.header-list__link {
+.navbar__link {
     display: block;
     text-decoration: none;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     padding: 0.5rem;
     background-color: cadetblue;
     color:darkslategray;
+    height: 100%;
 }
 
-.header-list__link:hover {
+.navbar__link:hover {
     color:lavender;
 }
 
+.container-form {
+    margin: 20px 0;
 
+}
 
 
 @media (max-width: 768px) {
-    .header-list {
+    .navbar {
         grid-auto-flow: inherit;
         grid-auto-columns: inherit;
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 543px) {
+    .navbar {
+        grid-template-columns: 1fr;
     }
 }
 
