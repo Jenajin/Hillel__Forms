@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search</title>
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="https://tests.fomenko.top/echo/index.php" autocomplete="on" name="search">
+
+            <div class="container-form">
+                <label for="body_type">Тип кузова</label>
+                <select id="body_type" name="body_type" autofocus>
+                    <option disabled selected>Виберіть один із варіантів</option>
+                    <option>Седан</option>
+                    <option>Універсал</option>
+                    <option>Хетчбек</option>
+                    <option>Мінівен</option>
+                    <option>Позашляховик (кросовер)</option>
+                    <option>Купе</option>
+                    <option>Кабріолет</option>
+                    <option>Пікап</option>
+                </select>
+            </div>
+
+            <div class="container-form">
+                <label for="car_brand">Марка автомобіля</label>
+                <select name="car_brand" id="car_brand">
+                    <option disabled selected>Виберіть один із варіантів</option>
+                    <option>Bentley</option>
+                    <option>Bugatti</option>
+                    <option>Volkswagen</option>
+                    <option>GMC</option>
+                    <option>Cadillac</option>
+                    <option>Toyota</option>
+                    <option>Ford</option>
+                    <option>Jaguar</option>
+                </select>
+            </div>
+
+            <div class="container-form">
+                <label for="producing_country">Країна виробник</label>
+                <select name="producing_country" id="producing_country">
+                    <option disabled selected>Виберіть один із варіантів</option>
+                    <option>Україна</option>
+                    <option>Китай</option>
+                    <option>США</option>
+                    <option>Німеччина</option>
+                    <option>Італія</option>
+                    <option>Англія</option>
+                    <option>Франція</option>
+                    <option>Індія</option>
+                </select>
+            </div>
+
+            <div class="container-form">
+                <label>Ціна:
+                    <span>від</span>
+                    <input type="number" name="price-min" step="1" min="5000" max="100000" value="50000">
+                    <span>до</span>
+                    <input type="number" name="price-max" step="1" min="5000" max="100000" value="100000">
+                </label>
+            </div>
+
+            <div class="container-form">
+                <label>Рік випуску:
+                    <span>від</span>
+                    <input type="number" name="year-min" step="1" min="1984" max="2022">
+                    <span>до</span>
+                    <input type="number" name="year-max" step="1" min="1984" max="2022">
+                </label>
+            </div>
+
+            <div class="container-form">
+                <label for="machine_condition">Стан машини</label>
+                <select id="machine_condition" name="machine_condition" multiple size="2">
+                    <option>Нерозмитнена</option>
+                    <option>Розмитнана</option>
+                    <option>Б/у</option>
+                    <option>Пошкоджена</option>
+                    <option>Без пробігу</option>
+                </select>
+            </div>
+
+            <div class="container-form">
+                <label for="fuel_type">Тип палива</label>
+                <select id="fuel_type" name="fuel_type">
+                    <option disabled selected>Виберіть один із варіантів</option>
+                    <option>Бензин</option>
+                    <option>Дизель</option>
+                    <option>Водень</option>
+                </select>
+            </div>
+
+            <div class="container-form">
+                <label for="Typeof_gearbox">Тип коробки передач</label>
+                <select id="Typeof_gearbox" name="Typeof_gearbox">
+                    <option disabled selected>Виберіть один із варіантів</option>
+                    <option>Механіка</option>
+                    <option>Автомат</option>
+                </select>
+            </div>
+
+            <div class="container-form">
+                <label for="color_car">Колір машини</label>
+                <input type="color" name="color_car" id="color_car">
+            </div>
+
+            <div class="container-form">
+                <label for="complete_set">Комплектація</label>
+                <select id="complete_set" name="complete_set">
+                    <option disabled selected>Виберіть один із варіантів</option>
+                    <option>Базова версія</option>
+                    <option>Комфорт</option>
+                    <option>Люкс</option>
+                </select>
+            </div>
+
+            <div class="container-form">
+                <input type="submit">
+                <input type="reset">
+            </div>
+
+        </form>
+
+        <ul class="navbar navbar-search">
+            <li class="navbar__item">
+                <a class="navbar__link" href="../index.html">Повернутись на головне меню</a>
+            </li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>

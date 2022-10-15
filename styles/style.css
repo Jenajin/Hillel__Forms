@@ -59,7 +59,6 @@ html {
 
 .container-form {
     margin: 20px 0;
-
 }
 
 
@@ -68,6 +67,10 @@ html {
         grid-auto-flow: inherit;
         grid-auto-columns: inherit;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .navbar-search {
+        grid-template-columns: 1fr;
     }
 }
 
